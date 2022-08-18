@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Unit Converter</title>
+</head>
+<body>
+    <main>
+        <header class="header-container flex blue-bg">
+            <h2 class="title fs-800 text-white">Metric/Imperial Unit Conversion</h2>
+            <input type="text" id="convert-el" class="fs-900 text-white" value="20">
+            <button id="convert-btn" class="fs-600 text-dark">Convert</button>
+        </header>
+        <section class="results-container flex light-bg">
+            <div class="result-content flex">
+                <h3 class="fs-700 text-medium-blue">Length (Meter/Feet)</h3>
+                <p id="result-in-length" class="fs-500 text-medium-dark">20 meters = 65.620 feet | 20 feet = 6.096 meters</p>
+            </div>
+            <div class="result-content flex">
+                <h3 class="fs-700 text-medium-blue"> Volume (Liters/Gallons)</h3>
+                <p id="result-in-volume" class="fs-500 text-medium-dark">20 liters = 5.280 gallons | 20 gallons = 75.758 liters</p>
+            </div>
+            <div class="result-content flex">
+                <h3 class="fs-700 text-medium-blue">Mass (Kilograms/Pounds)</h3>
+                <p id="result-in-mass" class="fs-500 text-medium-dark">20 kilos = 44.080 pounds | 20 pounds = 9.074 kilos</p>
+            </div>
+        </section>
+    </main>    
+    <script src="index.js"></script>
+</body>
+</html>
